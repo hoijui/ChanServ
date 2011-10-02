@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+    <serverAddress>springrts.com</serverAddress>
+    <serverPort>8200</serverPort>
+	<!--
+		ChanServ MUST use account with admin privileges
+		(not just moderator privileges) or else it will not be able
+		to join locked channels and will not work correctly!
+	-->
+    <!--
+		Passwords:
+		* "admin":        ISMvKXpXpadDiUoOSoAfww==
+		* "chanservTest": Ew45XcdiXzRz8RGvOYPydA==
+	-->
+    <username>PLEASE_REPLACE</username>
+    <password>PLEASE_REPLACE</password>
+    <remoteAccessPort>12345</remoteAccessPort>
+
+    <channels>
+        <channel>
+            <name>expert</name>
+            <operators>
+                <name>[XHC]mother</name>
+                <name>[XHC]GuiltySpark</name>
+            </operators>
+            <antiSpam>false</antiSpam>
+            <antiSpamSettings>
+                <penaltyLimit>5</penaltyLimit>
+                <longMsgLength>200</longMsgLength>
+                <normalMsgPenalty>1.0</normalMsgPenalty>
+                <longMsgPenalty>0.5</longMsgPenalty>
+                <doubleMsgPenalty>0.5</doubleMsgPenalty>
+            </antiSpamSettings>
+            <founder>[XHC]BigSteve</founder>
+            <key></key>
+            <static>false</static>
+            <topic>redundant topic of redundant topics of redundancy</topic>
+        </channel>
+
+        <channel>
+            <name>chanservTest</name>
+            <antiSpam>false</antiSpam>
+            <founder>admin</founder>
+            <static>false</static>
+            <topic>do what you want!</topic>
+        </channel>
+    </channels>
+
+    <remoteAccessAccounts>
+		<name>admin</name>
+		<name>admin2</name>
+    </remoteAccessAccounts>
+</configuration>
