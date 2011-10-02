@@ -92,7 +92,7 @@ public class ChanServ {
 		context = new Context();
 		context.setChanServ(this);
 		context.setConfiguration(new Configuration());
-		context.setConfigStorage(new LegacyConfigStorage(context));
+		context.setConfigStorage(new JAXBConfigStorage(context));
 		context.setAntiSpamSystem(new DefaultAntiSpamSystem(context));
 	}
 
